@@ -29,7 +29,7 @@ const BlogForm = ({ blog, isEditing }) => {
       }
       navigate('/blogs');
     } catch (error) {
-      toast.error('Error saving blog. Please try again.');
+      toast.error('Same Name already Exist.');
       console.error('Error saving blog:', error);
     }
   };
